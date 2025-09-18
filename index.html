@@ -28,27 +28,28 @@
       padding: 30px 20px;
       border-radius: 20px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      max-width: 700px;
+      max-width: 900px;
       width: 100%;
       box-sizing: border-box;
     }
 
     .logo {
-      width: 100px;
+      width: 200px; /* increased from 100px */
       height: auto;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin-bottom: 25px;
-      font-size: 1.8rem;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: var(--main-purple);
     }
 
     .links {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 25px; /* more space between items */
     }
 
     .pdf-item {
@@ -56,12 +57,12 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      flex: 1 1 120px; /* responsive width */
+      flex: 1 1 200px; /* increased from 120px to make each item wider */
     }
 
     .pdf-item img {
       width: 100%;
-      max-width: 140px;
+      max-width: 250px; /* increased from 140px */
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -75,30 +76,35 @@
     }
 
     .pdf-item p {
-      margin-top: 8px;
-      font-size: 0.9rem;
+      margin-top: 10px;
+      font-size: 1rem;
       color: #333;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .pdf-item:hover p {
+      color: var(--main-purple);
     }
 
     footer {
-      margin-top: 25px;
-      font-size: 0.85rem;
+      margin-top: 35px;
+      font-size: 0.9rem;
       color: #888;
     }
 
     /* Responsive adjustments */
     @media (max-width: 600px) {
       h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
       .logo {
-        width: 80px;
+        width: 150px;
       }
 
       .pdf-item img {
-        max-width: 100px;
+        max-width: 180px;
       }
     }
 
@@ -108,11 +114,11 @@
       }
 
       .pdf-item img {
-        max-width: 80px;
+        max-width: 140px;
       }
 
       .pdf-item p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -126,47 +132,41 @@
     <div class="links">
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1oeNJ_TaZSK0PfFTjKGvKNGcGslBjtPfZ/view?usp=sharing" target="_blank">
-          <img src="BOYS.PNG" alt="PDF 1 Preview">
+          <img src="BOYS.PNG" alt="Boys Category">
         </a>
         <p>Boys' Category</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1y3lhVTXVBiaUqviIGsd9wD5XgNwjSzlh/view?usp=sharing" target="_blank">
-          <img src="GIRLS.PNG" alt="PDF 2 Preview">
+          <img src="GIRLS.PNG" alt="Girls Category">
         </a>
         <p>Girls' Category</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1LHeukx2CCw31PR9mr_Lg3WSovgnKdKll/view?usp=sharing" target="_blank">
-          <img src="ACCESSORIES.PNG" alt="PDF 3 Preview">
+          <img src="ACCESSORIES.PNG" alt="Accessories">
         </a>
         <p>Accessories</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1h__OdOdSZwKAOEtTRiWlH2-tbN7Nyg6Z/view?usp=sharing" target="_blank">
-          <img src="SWIMWEAR.PNG" alt="PDF 3 Preview">
+          <img src="SWIMWEAR.PNG" alt="Swimwear and Pijamas">
         </a>
         <p>Swimwear and Pijamas</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1xuNaK5K4OyI-E7ep8WeqIBQIoHsQHx8n/view?usp=sharing" target="_blank">
-          <img src="BABY.PNG" alt="PDF 3 Preview">
+          <img src="BABY.PNG" alt="Babywear">
         </a>
         <p>Babywear</p>
       </div>
-      
     </div>
 
     <footer>Enjoy Your Tour!</footer>
   </div>
 </body>
 </html>
-
-
-
-
-
