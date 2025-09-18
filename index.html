@@ -34,7 +34,7 @@
     }
 
     .logo {
-      width: 250px;
+      width: 300px;
       height: auto;
       margin-bottom: 25px;
     }
@@ -57,9 +57,9 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      flex: 1 1 180px;
+      flex: 1 1 200px;
       background: #fff;
-      padding: 15px;
+      padding: 10px;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -72,12 +72,13 @@
 
     .pdf-item img {
       width: 100%;
-      max-width: 180px;
-      height: auto;
+      height: 220px;
+      object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
+      margin-bottom: 10px;
     }
 
     .pdf-item img:hover {
@@ -86,14 +87,14 @@
     }
 
     .pdf-item p {
-      margin-top: 8px;
+      margin-top: 0;
       font-size: 1rem;
       color: #333;
       font-weight: bold;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 0.95rem;
       color: #888;
     }
@@ -139,11 +140,15 @@
 
     @media (max-width: 600px) {
       .logo {
-        width: 180px;
+        width: 200px;
+      }
+
+      .pdf-item {
+        flex: 1 1 150px;
       }
 
       .pdf-item img {
-        max-width: 140px;
+        height: 160px;
       }
 
       .social-item {
@@ -161,35 +166,35 @@
     <div class="links">
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1oeNJ_TaZSK0PfFTjKGvKNGcGslBjtPfZ/view?usp=sharing" target="_blank">
-          <img src="BOYS.PNG" alt="Boys Category">
+          <img src="BOYS.PNG" alt="PANCO Kidswear Boys Collection">
         </a>
         <p>Boys' Category</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1y3lhVTXVBiaUqviIGsd9wD5XgNwjSzlh/view?usp=sharing" target="_blank">
-          <img src="GIRLS.PNG" alt="Girls Category">
+          <img src="GIRLS.PNG" alt="PANCO Kidswear Girls Collection">
         </a>
         <p>Girls' Category</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1LHeukx2CCw31PR9mr_Lg3WSovgnKdKll/view?usp=sharing" target="_blank">
-          <img src="ACCESSORIES.PNG" alt="Accessories">
+          <img src="ACCESSORIES.PNG" alt="PANCO Kidswear Accessories">
         </a>
         <p>Accessories</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1h__OdOdSZwKAOEtTRiWlH2-tbN7Nyg6Z/view?usp=sharing" target="_blank">
-          <img src="SWIMWEAR.PNG" alt="Swimwear and Pijamas">
+          <img src="SWIMWEAR.PNG" alt="PANCO Kidswear Swimwear & Pijamas">
         </a>
         <p>Swimwear and Pijamas</p>
       </div>
 
       <div class="pdf-item">
         <a href="https://drive.google.com/file/d/1xuNaK5K4OyI-E7ep8WeqIBQIoHsQHx8n/view?usp=sharing" target="_blank">
-          <img src="BABY.PNG" alt="Babywear">
+          <img src="BABY.PNG" alt="PANCO Kidswear Baby Collection">
         </a>
         <p>Babywear</p>
       </div>
@@ -207,6 +212,7 @@
           <p>Instagram</p>
         </a>
       </div>
+      <p>Kigali Alliance Business Center, KN 5 Road, Kigali, Rwanda</p>
     </footer>
   </div>
 </body>
