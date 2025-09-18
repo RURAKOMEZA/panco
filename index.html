@@ -25,23 +25,23 @@
     .container {
       text-align: center;
       background: #ffffff;
-      padding: 30px 20px;
+      padding: 40px 25px;
       border-radius: 20px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      max-width: 900px;
+      max-width: 1100px; /* bigger container */
       width: 100%;
       box-sizing: border-box;
     }
 
     .logo {
-      width: 200px; /* increased from 100px */
+      width: 300px; /* bigger logo */
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     h1 {
-      margin-bottom: 30px;
-      font-size: 2rem;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
       color: var(--main-purple);
     }
 
@@ -49,7 +49,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 25px; /* more space between items */
+      gap: 35px;
     }
 
     .pdf-item {
@@ -57,14 +57,14 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
-      flex: 1 1 200px; /* increased from 120px to make each item wider */
+      flex: 1 1 300px; /* increased width */
     }
 
     .pdf-item img {
       width: 100%;
-      max-width: 250px; /* increased from 140px */
+      max-width: 400px; /* much bigger images */
       height: auto;
-      border-radius: 12px;
+      border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
@@ -76,8 +76,8 @@
     }
 
     .pdf-item p {
-      margin-top: 10px;
-      font-size: 1rem;
+      margin-top: 12px;
+      font-size: 1.1rem;
       color: #333;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -88,37 +88,33 @@
     }
 
     footer {
-      margin-top: 35px;
-      font-size: 0.9rem;
+      margin-top: 50px;
+      font-size: 1rem;
       color: #888;
     }
 
     /* Responsive adjustments */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.6rem;
-      }
-
+    @media (max-width: 700px) {
       .logo {
-        width: 150px;
+        width: 200px;
       }
 
       .pdf-item img {
-        max-width: 180px;
+        max-width: 300px;
       }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
       .container {
-        padding: 20px 15px;
+        padding: 25px 15px;
       }
 
       .pdf-item img {
-        max-width: 140px;
+        max-width: 220px;
       }
 
       .pdf-item p {
-        font-size: 0.9rem;
+        font-size: 1rem;
       }
     }
   </style>
