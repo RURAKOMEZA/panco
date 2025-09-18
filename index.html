@@ -3,68 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PANCO KIDSWEAR</title>
+  <title>My PDF Homepage</title>
   <style>
     :root {
       --main-purple: #7B3FC8;
-      --light-bg: #f9f7fc;
+      --light-bg: #f9f5ff;
     }
 
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 0;
       background: var(--light-bg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       color: #333;
-      padding: 10px;
+      text-align: center;
     }
 
-    .container {
-      text-align: center;
-      background: #ffffff;
-      padding: 40px 25px;
-      border-radius: 20px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      max-width: 1100px;
-      width: 100%;
-      box-sizing: border-box;
+    header {
+      background: white;
+      padding: 30px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
     .logo {
-      width: 300px; /* bigger logo */
+      width: 250px;
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin-bottom: 40px;
-      font-size: 2.2rem;
       color: var(--main-purple);
+      font-size: 2rem;
+      margin: 0;
     }
 
-    .links {
+    main {
+      padding: 40px 20px;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 35px;
+      justify-content: center;
+      gap: 40px;
     }
 
     .pdf-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 20px;
       text-align: center;
-      flex: 1 1 300px; /* increased width */
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pdf-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
     .pdf-item img {
       width: 100%;
-      max-width: 400px; /* much bigger images */
+      max-width: 300px;
       height: auto;
-      border-radius: 15px;
+      border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
@@ -72,19 +72,7 @@
 
     .pdf-item img:hover {
       transform: scale(1.05);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-    }
-
-    .pdf-item p {
-      margin-top: 12px;
-      font-size: 1.1rem;
-      color: #333;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .pdf-item:hover p {
-      color: var(--main-purple);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
     }
 
     footer {
@@ -101,97 +89,56 @@
     }
 
     footer .social-icon {
-      width: 35px;
-      height: 35px;
-      border-radius: 8px;
+      width: 25px; /* smaller now */
+      height: 25px;
+      border-radius: 6px;
       transition: transform 0.3s ease;
     }
 
     footer .social-icon:hover {
       transform: scale(1.1);
     }
-
-    /* Responsive adjustments */
-    @media (max-width: 700px) {
-      .logo {
-        width: 200px;
-      }
-
-      .pdf-item img {
-        max-width: 300px;
-      }
-    }
-
-    @media (max-width: 450px) {
-      .container {
-        padding: 25px 15px;
-      }
-
-      .pdf-item img {
-        max-width: 220px;
-      }
-
-      .pdf-item p {
-        font-size: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="logo.jpg" alt="PANCO KIDSWEAR Logo" class="logo">
+  <header>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>Welcome to My Homepage</h1>
+  </header>
 
-    <h1>WELCOME TO PANCO KIDSWEAR</h1>
-
-    <div class="links">
-      <div class="pdf-item">
-        <a href="https://drive.google.com/file/d/1oeNJ_TaZSK0PfFTjKGvKNGcGslBjtPfZ/view?usp=sharing" target="_blank">
-          <img src="BOYS.PNG" alt="Boys Category">
-        </a>
-        <p>Boys' Category</p>
-      </div>
-
-      <div class="pdf-item">
-        <a href="https://drive.google.com/file/d/1y3lhVTXVBiaUqviIGsd9wD5XgNwjSzlh/view?usp=sharing" target="_blank">
-          <img src="GIRLS.PNG" alt="Girls Category">
-        </a>
-        <p>Girls' Category</p>
-      </div>
-
-      <div class="pdf-item">
-        <a href="https://drive.google.com/file/d/1LHeukx2CCw31PR9mr_Lg3WSovgnKdKll/view?usp=sharing" target="_blank">
-          <img src="ACCESSORIES.PNG" alt="Accessories">
-        </a>
-        <p>Accessories</p>
-      </div>
-
-      <div class="pdf-item">
-        <a href="https://drive.google.com/file/d/1h__OdOdSZwKAOEtTRiWlH2-tbN7Nyg6Z/view?usp=sharing" target="_blank">
-          <img src="SWIMWEAR.PNG" alt="Swimwear and Pijamas">
-        </a>
-        <p>Swimwear and Pijamas</p>
-      </div>
-
-      <div class="pdf-item">
-        <a href="https://drive.google.com/file/d/1xuNaK5K4OyI-E7ep8WeqIBQIoHsQHx8n/view?usp=sharing" target="_blank">
-          <img src="BABY.PNG" alt="Babywear">
-        </a>
-        <p>Babywear</p>
-      </div>
+  <main>
+    <div class="pdf-item">
+      <a href="https://drive.google.com/file/d/FILE_ID_1/view" target="_blank">
+        <img src="thumb1.jpg" alt="PDF 1" />
+      </a>
+      <p>Document 1</p>
     </div>
 
-    <footer>
-      <p>Enjoy Your Tour!</p>
-      <div class="socials">
-        <a href="https://wa.me/2507XXXXXXXX" target="_blank">
-          <img src="whatsapp.PNG" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com/yourusername" target="_blank">
-          <img src="instagram.PNG" alt="Instagram">
-        </a>
-      </div>
-    </footer>
-  </div>
+    <div class="pdf-item">
+      <a href="https://drive.google.com/file/d/FILE_ID_2/view" target="_blank">
+        <img src="thumb2.jpg" alt="PDF 2" />
+      </a>
+      <p>Document 2</p>
+    </div>
+
+    <div class="pdf-item">
+      <a href="https://drive.google.com/file/d/FILE_ID_3/view" target="_blank">
+        <img src="thumb3.jpg" alt="PDF 3" />
+      </a>
+      <p>Document 3</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Enjoy Your Tour!</p>
+    <div class="socials">
+      <a href="https://wa.me/+250788319970" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp" class="social-icon">
+      </a>
+      <a href="https://www.instagram.com/Panco.ea" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="social-icon">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
-
