@@ -28,7 +28,7 @@
       padding: 40px 25px;
       border-radius: 20px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-      max-width: 1100px; /* bigger container */
+      max-width: 1100px;
       width: 100%;
       box-sizing: border-box;
     }
@@ -91,6 +91,24 @@
       margin-top: 50px;
       font-size: 1rem;
       color: #888;
+    }
+
+    footer .socials {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    footer .social-icon {
+      width: 35px;
+      height: 35px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    footer .social-icon:hover {
+      transform: scale(1.1);
     }
 
     /* Responsive adjustments */
@@ -162,7 +180,17 @@
       </div>
     </div>
 
-    <footer>Enjoy Your Tour!</footer>
+    <footer>
+      <p>Enjoy Your Tour!</p>
+      <div class="socials">
+        <a href="https://wa.me/2507XXXXXXXX" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="social-icon">
+        </a>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
